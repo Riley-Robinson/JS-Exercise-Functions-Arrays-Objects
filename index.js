@@ -196,17 +196,14 @@ function getCarInfoById(inventory,id) {
  *     (1) an array which is an inventory of cars like the one inside /data/inventory.js.
  * sortCarInventory returns an inventory that is sorted by car_model, ascending [A-Z].
 */
-function sortCarInventory(arr) {
-  for(let i = 0; 1>arr.length; i++){
-    let container = arr[i].car_model
-  
-if(arr[i].car_model )
-
-else {
-
+function sortCarInventory(inventory) {
+  let newArr = [];
+  for(let i = 0; i<inventory.length; i++){
+    newArr.push(inventory[i]["car_model"])
 }
+newArr.sort()
+return newArr
 }
-
 /**
  * ### Challenge `getModelYears`
  * 
@@ -216,8 +213,7 @@ else {
  *     (1) an array which is an inventory of cars like the one inside /data/inventory.js.
  * getModelYears returns an array containing all the 'car_year's in the inventory.
 */
-function getModelYears(arr) {
-  let new 
+function getModelYears(arr,maxYear,) {
 }
 
 /**
